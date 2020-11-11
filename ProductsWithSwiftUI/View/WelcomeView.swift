@@ -17,28 +17,30 @@ struct WelcomeView: View {
     var body: some View {
         
         NavigationView{
-
+            
             ZStack{
-
-                VStack(spacing: 24.0){
-
+                BackgroundImage()
+                VStack(spacing: 20.0){
+                    
                     Picker("Choose login option", selection: $selectedLoginOption) {
-
+                        
                         ForEach(0 ..< loginOption.count) {
                             Text(self.loginOption[$0]).foregroundColor(.white)
                         }
                     }
                     .clipShape(Rectangle())
                     .pickerStyle(SegmentedPickerStyle())
-
+                    
                     if self.selectedLoginOption == 0 {
                         LoginView().navigationBarTitle("Login", displayMode: .inline)
                     } else {
                         SignUpView().navigationBarTitle("Sign Up", displayMode: .inline)
                     }
                 }
-                .padding(.all, 20.0)
+                .padding(.vertical, 20.0)
+                .padding(.horizontal, 20.0)
             }
+            .padding(.all, 0.0)
         }
     }
 }

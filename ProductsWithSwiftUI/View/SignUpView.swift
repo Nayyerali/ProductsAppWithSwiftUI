@@ -23,8 +23,9 @@ struct SignUpView: View {
                 VStack(spacing: 16.0){
                     
                     Image("PlaceholderImage")
-                        .frame(width: 150.0, height: 150.0)
+                        .resizable()
                         .aspectRatio(contentMode: .fit)
+                        .frame(width: 150.0, height: 150.0)
                         .foregroundColor(Color.black)
                         .clipShape(Circle())
                         .overlay(Circle().stroke(Color.white, lineWidth: 4))
@@ -56,6 +57,7 @@ struct SignUpView: View {
                             .padding()
                             .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
                     }
+                    .padding(.horizontal, 5.0)
                     
                     Button("Sign Up"){}
                         .padding()
@@ -64,9 +66,9 @@ struct SignUpView: View {
                         .foregroundColor(Color.white)
                         .clipShape(Capsule())
                     Spacer()
-                }.padding(.vertical, 24.0)
+                }.padding(.vertical)
             }
-        }.padding(.vertical, 24.0)
+        }
     }
 }
 

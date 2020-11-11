@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EB286646255BA65800FEFEC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB286645255BA65800FEFEC2 /* AppDelegate.swift */; };
 		EB286648255BA65800FEFEC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB286647255BA65800FEFEC2 /* SceneDelegate.swift */; };
-		EB28664A255BA65800FEFEC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB286649255BA65800FEFEC2 /* ContentView.swift */; };
 		EB28664C255BA65900FEFEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB28664B255BA65900FEFEC2 /* Assets.xcassets */; };
 		EB28664F255BA65900FEFEC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB28664E255BA65900FEFEC2 /* Preview Assets.xcassets */; };
 		EB286652255BA65900FEFEC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB286650255BA65900FEFEC2 /* LaunchScreen.storyboard */; };
@@ -23,13 +22,13 @@
 		EB286670255BA82D00FEFEC2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28666A255BA82D00FEFEC2 /* ProfileView.swift */; };
 		EB286671255BA82D00FEFEC2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28666B255BA82D00FEFEC2 /* SignUpView.swift */; };
 		EB286673255BA83600FEFEC2 /* ServerCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB286672255BA83600FEFEC2 /* ServerCommunication.swift */; };
+		EB286675255BBC5100FEFEC2 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB286674255BBC5100FEFEC2 /* BackgroundImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB286642255BA65800FEFEC2 /* ProductsWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB286645255BA65800FEFEC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB286647255BA65800FEFEC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB286649255BA65800FEFEC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB28664B255BA65900FEFEC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB28664E255BA65900FEFEC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB286651255BA65900FEFEC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		EB28666A255BA82D00FEFEC2 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EB28666B255BA82D00FEFEC2 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		EB286672255BA83600FEFEC2 /* ServerCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCommunication.swift; sourceTree = "<group>"; };
+		EB286674255BBC5100FEFEC2 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,6 @@
 		EB28665D255BA7D000FEFEC2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EB286649255BA65800FEFEC2 /* ContentView.swift */,
 				EB286668255BA82D00FEFEC2 /* WelcomeView.swift */,
 				EB286667255BA82D00FEFEC2 /* LoginView.swift */,
 				EB28666B255BA82D00FEFEC2 /* SignUpView.swift */,
@@ -157,6 +156,7 @@
 				EB286662255BA81E00FEFEC2 /* ProductsList.swift */,
 				EB286660255BA81D00FEFEC2 /* ProductsRow.swift */,
 				EB286661255BA81E00FEFEC2 /* SPTextField.swift */,
+				EB286674255BBC5100FEFEC2 /* BackgroundImage.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -240,8 +240,8 @@
 				EB286671255BA82D00FEFEC2 /* SignUpView.swift in Sources */,
 				EB28666F255BA82D00FEFEC2 /* ProductsView.swift in Sources */,
 				EB286664255BA81E00FEFEC2 /* SPTextField.swift in Sources */,
+				EB286675255BBC5100FEFEC2 /* BackgroundImage.swift in Sources */,
 				EB28666E255BA82D00FEFEC2 /* WelcomeView.swift in Sources */,
-				EB28664A255BA65800FEFEC2 /* ContentView.swift in Sources */,
 				EB28666D255BA82D00FEFEC2 /* LoginView.swift in Sources */,
 				EB286670255BA82D00FEFEC2 /* ProfileView.swift in Sources */,
 				EB286665255BA81E00FEFEC2 /* ProductsList.swift in Sources */,

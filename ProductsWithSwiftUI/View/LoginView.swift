@@ -31,31 +31,33 @@ struct LoginView: View {
                         HStack(spacing: 8.0) {
                             Image(systemName: "envelope").foregroundColor(.gray)
                             SPTextField(sptext: $email)}
-                        .padding()
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
+                            .padding()
+                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
                         HStack(spacing: 8.0) {
                             Image(systemName: "lock").foregroundColor(.gray)
                             SPTextField(sptext: $password)}
-                        .padding()
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
+                            .padding()
+                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
                     }
+                    .padding(.horizontal, 5.0)
                     VStack(alignment: .trailing){
                         Button("Forgot Password ?"){}
-                        .foregroundColor(Color.black)
-                        .padding(.trailing)
+                            .foregroundColor(Color.black)
+                            .padding(.trailing)
                     }
                     
                     Button("Login"){}
-                    .padding()
-                    .frame(width: 200.0, height: 44.0)
-                    .background(Color.black)
-                    .foregroundColor(Color.white)
-                    .clipShape(Capsule())
+                        .padding()
+                        .frame(width: 200.0, height: 44.0)
+                        .background(Color.black)
+                        .foregroundColor(Color.white)
+                        .clipShape(Capsule())
                     Spacer()
                     
-                }.padding(.vertical, 24.0)
+                }
+                .padding(.vertical)
             }
-        }.padding(.vertical, 24.0)
+        }
     }
 }
 

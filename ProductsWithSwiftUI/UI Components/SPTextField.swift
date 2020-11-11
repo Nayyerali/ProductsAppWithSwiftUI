@@ -13,7 +13,7 @@ struct SPTextField: View {
     @Binding var sptext: String
 
     var body: some View {
-        TextField("", text: $sptext)
+        TextField("", text: $sptext).disableAutocorrection(true)
     }
 }
 
